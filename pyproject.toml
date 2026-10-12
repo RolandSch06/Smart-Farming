@@ -1,0 +1,20 @@
+[project]
+name = "warnsystem"
+version = "0.3.0"
+description = "Kursprojekt Smart Farming: Warnsystem für einen Betrieb im Mostviertel"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "matplotlib", "requests"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["warnsystem"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
