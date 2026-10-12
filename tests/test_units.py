@@ -45,7 +45,7 @@ def test_unknown_unit_raises(original, target):
         units.convert_temperature(1.0, original, target)
 
 
-# ---------------------------------------------------------------- Bonus
+# Bonus
 def _convert_available():
     try:
         units.convert(1.0, "K", "K")
